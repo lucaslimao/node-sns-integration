@@ -14,13 +14,7 @@ const start = (fn) => async (event) => {
 
 }
 
-const error = event => {
-    logger.info(`${LOG_PREFIX}[Worker][Error]${JSON.stringify(event)}`)
-}
-
 const worker = async event => {
-
-    try {
 
         const records = event.Records
 
@@ -41,20 +35,8 @@ const worker = async event => {
             body: 'Execute success. '
         }
 
-    } catch (error) {
-
-        logger.info(`${LOG_PREFIX}[Worker][Error]${JSON.stringify(error)}`)
-
-        return {
-            statusCode: 500,
-            body: 'Execute fail. '
-        }
-
-    }
-
 }
 
 module.exports = {
-    error: start(error),
     worker: start(worker)
 }
