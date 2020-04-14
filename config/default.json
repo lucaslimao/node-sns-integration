@@ -1,0 +1,14 @@
+{
+    "logger": {
+        "console": {
+            "level": "silly"
+        },
+        "file": {
+            "level": "error",
+            "path": "./musii-sns-worker.log"
+        }
+    },
+    "mongodb": {
+        "url": ""
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "node-sns-integration",
+  "version": "0.0.1",
+  "description": "Aws Sns Integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaslimao/node-sns-integration.git"
+  },
+  "keywords": [
+    "Aws",
+    "Sns",
+    "Node"
+  ],
+  "author": "Lucas Limão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaslimao/node-sns-integration/issues"
+  },
+  "homepage": "https://github.com/lucaslimao/node-sns-integration#readme",
+  "dependencies": {
+    "config": "^3.3.0",
+    "mongoose": "^5.9.4",
+    "musii-node-helper": "0.0.5",
+    "node-mongoose-repository": "0.0.4"
+  }
+}
